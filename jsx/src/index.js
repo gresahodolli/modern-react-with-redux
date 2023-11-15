@@ -10,17 +10,7 @@ const root = ReactDOM.createRoot(el);
 
 // 4) Create a component
 function App() {
-    return (
-        <div className='wrapper'>
-            <textarea 
-                readOnly
-                maxLength={3}
-                spellCheck
-                style={{backgroundColor:'gray'}}
-            />
-
-        </div>
-    )
+    return <textarea autoFocus={true}/>
 }
 
 
