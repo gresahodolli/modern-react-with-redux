@@ -1,3 +1,5 @@
+import './App.css';
+import './AnimalShow.css';
 import { useState } from 'react';
 import AnimalShow from './AnimalShow';
 import { render } from '@testing-library/react';
@@ -21,10 +23,12 @@ function App() {
         return <AnimalShow type={animal} key={index} />
     })
 
-    return <div>
-        <button onClick={handleClick}> Add Animal</button>
-        <div>{renderedAnimals}</div>
-    </div>
+    return (
+        <div className='app'>
+            <button className="button" onClick={handleClick}> Add Animal</button>
+            <div className='animal-list'>{renderedAnimals}</div>
+        </div>
+    );
 }
 
 export default App;
