@@ -10,12 +10,19 @@ function Button({
     warning,
     danger,
     outline,
-    rounded
+    rounded,
 }) {
+    let baseClassName =  'px-3 py-1.5 border'
+    if (primary) {
+        baseClassName += 'bg-blue-500 border-blue-600 text-white';
+    } else if (secondary) {
+        baseClassName += 'bg-blue-500 border-blue-600 text-white';
+    }
+
   return (
-    <button>{children}</button>
+    <button className='px-3 py-1.5 border border-green-500 backdrop-blur-0 bg-blue-500 text-white'>{children}</button>
   )
-}
+} 
 
 Button.propTypes = {
     checkVariationValue: ({primary, secondary, success, warning, danger}) => {
