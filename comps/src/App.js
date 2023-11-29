@@ -20,7 +20,7 @@ function App() {
     ]
 
   return (
-    <Accordion items />
+    <Accordion items={items} />
   )
 }
 
