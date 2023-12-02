@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Dropdown from './components/Dropdown';
+import { ClassName } from 'classnames';
 
 function App() {
     const [selection, setSelection] = useState(null);
@@ -16,7 +17,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className='flex'>
         <Dropdown options={options} value={selection} onChange={handleSelect} />
     </div>
   )
