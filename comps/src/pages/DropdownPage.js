@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Dropdown from '../components/Dropdown';
 import { ClassName } from 'classnames';
 
-function Dropdown() {
+function DropdownPage() {
     const [selection, setSelection] = useState(null);
 
     const handleSelect = (option) => {
@@ -23,4 +23,4 @@ function Dropdown() {
   )
 }
 
-export default Dropdown;
+export default DropdownPage;
