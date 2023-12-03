@@ -1,19 +1,22 @@
 import { useContext } from 'react';
 import NavigationContext from '../context/navigation';
 
-
 function Link({ to, children }) {
-    const { navigate } = useContext(NavigationContext);
+  const { navigate } = useContext(NavigationContext);
 
-    const handleClick = (event) => {
-        event.preventDefault();
-
-        navigate(to);
-    };
+  const handleClick = (event) => {
+    if (event.metaKey || event.ctrlKey) {
+      return;
+    }
+    
+    window.open(to, '_blank');
+  };
 
   return (
-    <a onClick={handleClick}>{children}</a>
-  )
+    <a href={to} onClick={handleClick} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
+  );
 }
 
 export default Link;
