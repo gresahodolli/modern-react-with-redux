@@ -4,7 +4,7 @@ import { className } from 'classnames';
 
 function ButtonPage() {
     const handleClick = () => {
-        console.log()
+        
     };
 
     return (

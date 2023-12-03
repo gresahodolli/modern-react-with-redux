@@ -11,13 +11,12 @@ function Link({ to, children }) {
       return;
     }
     
-    window.open(to, '_blank');
+    navigate(to);
   };
 
   return (
-    <a className={classes} href={to} onClick={handleClick} target="_blank" rel="noopener noreferrer">
-      {children}
-    </a>
+    <a className={classes} onClick={handleClick}>{children}</a>
+    
   );
 }
 
