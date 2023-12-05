@@ -22,7 +22,7 @@ function Sidebar() {
     })
 
   return (
-    <div className='sticky top-0 overflow-hidden flex flex-col items-start'>
+    <div className='sticky top-0 left-5 overflow-hidden flex flex-col items-start'>
        {renderedLinks}
     </div>
   )
