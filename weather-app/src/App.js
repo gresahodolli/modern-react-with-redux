@@ -3,15 +3,13 @@ import hotBg from "./assets/hotBg.jpg";
 import coldBg from "./assets/coldBg.jpg";
 import './style.css';
 
-
 function App() {
   return (
-    <div className='app' style={{bacgroundImage: `url(${coldBg})`}}>
+    <div className='app' style={{backgroundImage: `url(${coldBg})`}}>
       <div className='overlay'>
         <div className='container'>
           <div className='section section__inputs'>
-            <input type="text" name="city" placeholder="Enter City.
-            .." />
+            <input type="text" name="city" placeholder="Enter City..." />
             <button>F</button>
           </div>
           
@@ -19,7 +17,7 @@ function App() {
             <div className='icon'>
               <h3>London, GB</h3>
               <img 
-                src="https://openweathermap.org/img/wn/02@2x.png" 
+                src="https://freepngimg.com/thumb/categories/2275.png" 
                 alt="weatherIcon"
               />
               <h3>Cloudy</h3>
@@ -36,4 +34,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
