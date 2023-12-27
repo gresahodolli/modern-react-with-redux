@@ -15,6 +15,10 @@
     {
       "name": "Mr. Juana King",
       "id": 5
+    },
+    {
+      "name": "Bradford Vandervort",
+      "id": 6
     }
   ],
   "albums": [
@@ -27,6 +31,11 @@
       "userId": 1,
       "title": "Oriental Rubber Chair",
       "id": 16
+    },
+    {
+      "userId": 1,
+      "title": "Elegant Metal Pants",
+      "id": 17
     }
   ],
   "photos": [
